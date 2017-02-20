@@ -22,6 +22,7 @@ class Posting: NSObject {
     var thumbnailLink: URL?
     
     init?(postingDictionary: NSDictionary) {
+        
         if let artistInDictionary = postingDictionary["artist"] as? String,
             let title = postingDictionary["title"] as? String,
             let loveCount = postingDictionary["loved_count"] as? Int,
@@ -50,10 +51,18 @@ class Posting: NSObject {
             print("Error initializing posting!")
             return nil
         }
+    }
+    
+    class func postingsFromArray(postsFromAPI: [NSDictionary]) -> [Posting] {
+        var postingArray = [Posting]()
         
-//        if let title: String = postingDictionary["title"] as? String {
-//            self.titleName = title
-//        }
+        for postDictionary in postsFromAPI {
+            guard let post = Posting(postingDictionary: postDictionary) else {
+                continue
+            }
+            postingArray.append(post)
+        }
         
+        return postingArray
     }
 }
