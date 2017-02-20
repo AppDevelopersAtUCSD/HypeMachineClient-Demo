@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="cKp-c7-b1d" customClass="PostTableViewCell" customModule="HypeMachineMusic" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostingTableViewCell" rowHeight="120" id="cKp-c7-b1d" customClass="PostTableViewCell" customModule="HypeMachineMusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cKp-c7-b1d" id="1J7-It-qnW">
@@ -90,6 +90,9 @@
                             <constraint firstAttribute="bottom" secondItem="VqK-PN-c7A" secondAttribute="bottom" id="uXq-5E-V3S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="postsTableView" destination="VqK-PN-c7A" id="zll-C4-Luc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

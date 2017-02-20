@@ -7,17 +7,29 @@
 //
 
 import UIKit
+import AFNetworking
 
 class PostTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var postImageView: UIImageView!
-
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var rankLabel: UILabel!
     
+    var postData: Posting? {
+        didSet {
+            print("PostData has been set!")
+            if let thumbnailURL = postData?.thumbnailLink {
+                
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
+//        self.artistLabel.text = self.postData?.artistName
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -19,7 +19,7 @@ class HypeMClient: NSObject {
     private override init() { /* Don't need to do anything */ }
     
     // TODO: - Uncomment the following block of code when done making Posting data model!
-    /*
+
     func getPostings(success: @escaping ([Posting])->(), failure: @escaping (Error?)->()) {
         let requestURL: URL? = URL(string: HypeMClient.baseHypeMEndpoint)
         guard let reqURL: URL = requestURL else {
@@ -39,13 +39,13 @@ class HypeMClient: NSObject {
             guard let data: Data = data else {
                 return
             }
-            if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any?]] {
-                let people: [Posting] = Posting.peopleFromDictionaryArray(dataDictionary)
+            if let dataDictionary = try! JSONSerialization.jsonObject(with:data, options: []) as? [NSDictionary] {
+                let people: [Posting] = Posting.postingsFromArray(postsFromAPI: dataDictionary)
+                    
                 
                 success(people)
             }
         }
         task.resume()
     }
- */
 }
