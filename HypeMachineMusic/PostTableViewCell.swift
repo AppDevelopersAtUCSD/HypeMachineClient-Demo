@@ -20,8 +20,11 @@ class PostTableViewCell: UITableViewCell {
         didSet {
             print("PostData has been set!")
             if let thumbnailURL = postData?.thumbnailLink {
-                
+                self.postImageView.setImageWith(thumbnailURL)
             }
+            self.artistLabel.text = self.postData?.artistName
+            self.titleLabel.text = self.postData?.titleName
+            self.rankLabel.text = String(describing: self.postData?.rank)
         }
     }
     
