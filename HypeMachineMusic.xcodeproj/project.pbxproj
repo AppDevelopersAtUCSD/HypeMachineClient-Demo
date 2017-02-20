@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D59A442E1E5B72A800F570BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A442D1E5B72A800F570BF /* AppDelegate.swift */; };
+		D59A44301E5B72A800F570BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A442F1E5B72A800F570BF /* ViewController.swift */; };
+		D59A44331E5B72A800F570BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59A44311E5B72A800F570BF /* Main.storyboard */; };
+		D59A44351E5B72A800F570BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59A44341E5B72A800F570BF /* Assets.xcassets */; };
+		D59A44381E5B72A800F570BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59A44361E5B72A800F570BF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D59A442A1E5B72A800F570BF /* HypeMachineMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeMachineMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59A442D1E5B72A800F570BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D59A442F1E5B72A800F570BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D59A44321E5B72A800F570BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D59A44341E5B72A800F570BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D59A44371E5B72A800F570BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D59A44391E5B72A800F570BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D59A44271E5B72A800F570BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D59A44211E5B72A800F570BF = {
+			isa = PBXGroup;
+			children = (
+				D59A442C1E5B72A800F570BF /* HypeMachineMusic */,
+				D59A442B1E5B72A800F570BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D59A442B1E5B72A800F570BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59A442A1E5B72A800F570BF /* HypeMachineMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59A442C1E5B72A800F570BF /* HypeMachineMusic */ = {
+			isa = PBXGroup;
+			children = (
+				D59A442D1E5B72A800F570BF /* AppDelegate.swift */,
+				D59A442F1E5B72A800F570BF /* ViewController.swift */,
+				D59A44311E5B72A800F570BF /* Main.storyboard */,
+				D59A44341E5B72A800F570BF /* Assets.xcassets */,
+				D59A44361E5B72A800F570BF /* LaunchScreen.storyboard */,
+				D59A44391E5B72A800F570BF /* Info.plist */,
+			);
+			path = HypeMachineMusic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D59A44291E5B72A800F570BF /* HypeMachineMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D59A443C1E5B72A800F570BF /* Build configuration list for PBXNativeTarget "HypeMachineMusic" */;
+			buildPhases = (
+				D59A44261E5B72A800F570BF /* Sources */,
+				D59A44271E5B72A800F570BF /* Frameworks */,
+				D59A44281E5B72A800F570BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypeMachineMusic;
+			productName = HypeMachineMusic;
+			productReference = D59A442A1E5B72A800F570BF /* HypeMachineMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D59A44221E5B72A800F570BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nick McDonald";
+				TargetAttributes = {
+					D59A44291E5B72A800F570BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3QT27T2PJ3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D59A44251E5B72A800F570BF /* Build configuration list for PBXProject "HypeMachineMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D59A44211E5B72A800F570BF;
+			productRefGroup = D59A442B1E5B72A800F570BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D59A44291E5B72A800F570BF /* HypeMachineMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D59A44281E5B72A800F570BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59A44381E5B72A800F570BF /* LaunchScreen.storyboard in Resources */,
+				D59A44351E5B72A800F570BF /* Assets.xcassets in Resources */,
+				D59A44331E5B72A800F570BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D59A44261E5B72A800F570BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59A44301E5B72A800F570BF /* ViewController.swift in Sources */,
+				D59A442E1E5B72A800F570BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D59A44311E5B72A800F570BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D59A44321E5B72A800F570BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D59A44361E5B72A800F570BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D59A44371E5B72A800F570BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D59A443A1E5B72A800F570BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D59A443B1E5B72A800F570BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D59A443D1E5B72A800F570BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3QT27T2PJ3;
+				INFOPLIST_FILE = HypeMachineMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickdonald.HypeMachineMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D59A443E1E5B72A800F570BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3QT27T2PJ3;
+				INFOPLIST_FILE = HypeMachineMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickdonald.HypeMachineMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D59A44251E5B72A800F570BF /* Build configuration list for PBXProject "HypeMachineMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D59A443A1E5B72A800F570BF /* Debug */,
+				D59A443B1E5B72A800F570BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D59A443C1E5B72A800F570BF /* Build configuration list for PBXNativeTarget "HypeMachineMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D59A443D1E5B72A800F570BF /* Debug */,
+				D59A443E1E5B72A800F570BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D59A44221E5B72A800F570BF /* Project object */;
+}
