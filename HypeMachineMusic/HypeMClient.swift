@@ -18,7 +18,9 @@ class HypeMClient: NSObject {
     // Override the public init so we can ensure a singleton SpotifyClient object.
     private override init() { /* Don't need to do anything */ }
     
-    /*func getPostings(success: @escaping ([Posting])->(), failure: @escaping (Error?)->()) {
+    // TODO: - Uncomment the following block of code when done making Posting data model!
+    /*
+    func getPostings(success: @escaping ([Posting])->(), failure: @escaping (Error?)->()) {
         let requestURL: URL? = URL(string: HypeMClient.baseHypeMEndpoint)
         guard let reqURL: URL = requestURL else {
             print("Error making request URL")
@@ -37,14 +39,13 @@ class HypeMClient: NSObject {
             guard let data: Data = data else {
                 return
             }
-            if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any?] {
-                let results: [[String: Any?]] = (dataDictionary["results"] as? [[String: Any?]])!
-                let people: [Posting] = Posting.peopleFromDictionaryArray(results)
+            if let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any?]] {
+                let people: [Posting] = Posting.peopleFromDictionaryArray(dataDictionary)
                 
                 success(people)
             }
         }
         task.resume()
-    }*/
-
+    }
+ */
 }
