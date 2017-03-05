@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		656B46041E6BA07900E1F952 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B46031E6BA07900E1F952 /* TestViewController.swift */; };
 		815F35924DF5B5DCA3871978 /* Pods_HypeMachineMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE870065C3638B25CCE683D8 /* Pods_HypeMachineMusic.framework */; };
 		D59A442E1E5B72A800F570BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A442D1E5B72A800F570BF /* AppDelegate.swift */; };
 		D59A44301E5B72A800F570BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A442F1E5B72A800F570BF /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3C04A70F0015719D0DF7CE4E /* Pods-HypeMachineMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HypeMachineMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HypeMachineMusic/Pods-HypeMachineMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		571930A22E4693A5AA67E95C /* Pods-HypeMachineMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HypeMachineMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-HypeMachineMusic/Pods-HypeMachineMusic.release.xcconfig"; sourceTree = "<group>"; };
+		656B46031E6BA07900E1F952 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		CE870065C3638B25CCE683D8 /* Pods_HypeMachineMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HypeMachineMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59A442A1E5B72A800F570BF /* HypeMachineMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeMachineMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59A442D1E5B72A800F570BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		D59A44431E5B73A600F570BF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				656B46031E6BA07900E1F952 /* TestViewController.swift */,
 				D59A442F1E5B72A800F570BF /* ViewController.swift */,
 			);
 			name = "View Controllers";
@@ -172,7 +175,7 @@
 				TargetAttributes = {
 					D59A44291E5B72A800F570BF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3QT27T2PJ3;
+						DevelopmentTeam = UBH739J24U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,6 +268,7 @@
 				D59A44301E5B72A800F570BF /* ViewController.swift in Sources */,
 				D59A444A1E5BA16C00F570BF /* PostTableViewCell.swift in Sources */,
 				D59A442E1E5B72A800F570BF /* AppDelegate.swift in Sources */,
+				656B46041E6BA07900E1F952 /* TestViewController.swift in Sources */,
 				D59A44411E5B72D900F570BF /* HypeMClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +391,7 @@
 			baseConfigurationReference = 3C04A70F0015719D0DF7CE4E /* Pods-HypeMachineMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3QT27T2PJ3;
+				DEVELOPMENT_TEAM = UBH739J24U;
 				INFOPLIST_FILE = HypeMachineMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickdonald.HypeMachineMusic;
@@ -401,7 +405,7 @@
 			baseConfigurationReference = 571930A22E4693A5AA67E95C /* Pods-HypeMachineMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3QT27T2PJ3;
+				DEVELOPMENT_TEAM = UBH739J24U;
 				INFOPLIST_FILE = HypeMachineMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickdonald.HypeMachineMusic;
@@ -429,6 +433,7 @@
 				D59A443E1E5B72A800F570BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

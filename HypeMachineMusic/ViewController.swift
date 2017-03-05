@@ -8,18 +8,25 @@
 
 import UIKit
 
+protocol ModalActivityDelegate: class {
+  func modalActivityClearTable()
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var postsTableView: UITableView!
     
     var postings: [Posting]?
-    
+    var isMoreDataLoading = false
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.postsTableView.dataSource = self
         self.postsTableView.delegate = self
+      
+        self.postsTableView.dataSource?.tableView(postsTableView, numberOfRowsInSection: 0)
         
         HypeMClient.sharedInstance.getPostings(success: { (postings: [Posting]) in
             // code
@@ -53,4 +60,49 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
         
     }
+  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let nc = storyboard.instantiateViewController(withIdentifier: "TestNavController")
+      let vc = nc.childViewControllers.first as! TestViewController
+      vc.delegate = self
+      present(nc, animated: true, completion: nil)
+    }
+  
+}
+
+extension ViewController: ModalActivityDelegate {
+  
+  func modalActivityClearTable() {
+    postings = nil
+    postsTableView.reloadData()
+  }
+  
+}
+
+extension ViewController: UIScrollViewDelegate {
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if (!isMoreDataLoading) {
+      // Calculate the position of one screen length before the bottom of the results
+      let scrollViewContentHeight = postsTableView.contentSize.height
+      let scrollOffsetThreshold = scrollViewContentHeight - postsTableView.bounds.size.height
+      
+      // When the user has scrolled past the threshold, start requesting
+      if(scrollView.contentOffset.y > scrollOffsetThreshold && postsTableView.isDragging) {
+        isMoreDataLoading = true
+        
+        // ... Code to load more results ...
+        HypeMClient.sharedInstance.getPostings(success: { (postings: [Posting]) in
+          // code
+          self.postings?.append(contentsOf: postings)
+          self.postsTableView.reloadData()
+        }, failure: { (error: Error?) in
+          // code
+          print("Error loading posts: \(error?.localizedDescription)")
+        })
+      }
+    }
+  }
+  
 }

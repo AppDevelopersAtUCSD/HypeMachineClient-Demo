@@ -24,7 +24,10 @@ class PostTableViewCell: UITableViewCell {
             }
             self.artistLabel.text = self.postData?.artistName
             self.titleLabel.text = self.postData?.titleName
-            self.rankLabel.text = String(describing: self.postData?.rank)
+
+            if let rank = self.postData?.rank {
+              self.rankLabel.text = String(describing: rank)
+            }
         }
     }
     
